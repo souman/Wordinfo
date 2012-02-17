@@ -1,0 +1,25 @@
+#Winfo-Combined-Button > .toolbarbutton-menubutton-button {
+    -moz-box-orient: horizontal;
+}
+
+#Winfo-Web-Button,
+#Winfo-Combined-Web {
+    list-style-image: url("chrome://wordinfo/skin/web.png");
+}
+#Winfo-Combined-Hindi {
+    list-style-image: url("chrome://wordinfo/skin/hindi.png");
+}
+#Winfo-Combined-Bengali {
+    list-style-image: url("chrome://wordinfo/skin/bengali.png");
+}
+
+#Winfo-ResizeBar {
+    background-image: url("chrome://wordinfo/skin/gripper.png");
+    min-height: 30px;
+    min-width: 3px;
+}
+
+#Winfo-ResizeSplitter {
+    background: transparent;
+    border: none !important;
+}

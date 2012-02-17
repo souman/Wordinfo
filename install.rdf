@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+    <Description about="urn:mozilla:install-manifest">
+
+        <!-- Required Items -->
+	<!-- Id of the extention -->
+        <em:id>wordinfo@cse.iitb.ac.in</em:id>
+	<!-- Name of the extention -->
+        <em:name>Word-Info</em:name>
+	<!-- version number -->
+        <em:version>1.0</em:version>
+
+        <em:targetApplication>
+            <Description>
+		<!-- Id of mozila firefox -->
+                <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+		<!-- Compatibility -->
+                <em:minVersion>1.5</em:minVersion>
+                <em:maxVersion>3.5.*</em:maxVersion>
+            </Description>
+        </em:targetApplication>
+
+        <!-- Optional Items -->
+	<!-- Name of the writer -->
+        <em:creator>Souman Mandal</em:creator>
+	<!-- Small description of the functionality of the extention -->
+        <em:description>Will give information for a word</em:description>
+	<!-- Extention URL-->
+        <em:homepageURL>http://www.cse.iitb.ac.in~souman</em:homepageURL>
+
+    </Description>
+</RDF>

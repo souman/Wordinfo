@@ -1,0 +1,3 @@
+content wordinfo jar:chrome/wordinfo.jar!/content/
+overlay chrome://browser/content/browser.xul chrome://wordinfo/content/wordinfo.xul
+skin wordinfo classic/1.0 jar:chrome/wordinfo.jar!/skin/

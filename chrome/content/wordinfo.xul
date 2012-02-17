@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://wordinfo/skin/wordinfo.css" type="text/css"?><overlay id="Winfo-Overlay"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+         
+    <script type="application/x-javascript"
+            src="chrome://wordinfo/content/wordinfo.js" />
+            
+    <toolbox id="navigator-toolbox">
+    
+        <toolbar id="Winfo-Toolbar" toolbarname="Word-Info Toolbar" 
+                 class="chromeclass-toolbar" context="toolbar-context-menu" 
+                 hidden="false" persist="hidden">
+                 
+            
+            
+            <toolbaritem id="Winfo-SearchTerms-TBItem" persist="width">
+                <menulist id="Winfo-SearchTerms" editable="true" flex="1"
+                          minwidth="100" width="250"
+                          onkeyup="Winfo_KeyHandler(event);">
+                    <menupopup id="Winfo-SearchTermsMenu" onpopupshowing="Winfo_Populate()" />
+                </menulist>
+            </toolbaritem>
+            
+            <splitter id="Winfo-ResizeSplitter" state="open" collapse="none"
+                      resizebefore="closest" resizeafter="farthest"
+                      tooltiptext="Resize the Search Box">
+                <vbox id="Winfo-ResizeBar" />
+            </splitter>
+            
+            <toolbaritem flex="0">
+                <menubar id="language-menubar">
+    		  <menu id="language-menu" label="Language" tooltiptext="Select the language" accesskey="L">
+                    <menupopup >
+                        <menuitem id="Winfo-Combined-Hindi" label="हिन्दी" accesskey="H"
+                                  class="menuitem-iconic" tooltiptext="Get the hindi meaning"
+                                  oncommand="Winfo_Search(event, 'hindi'); event.stopPropagation();" />
+
+                        <menuitem id="Winfo-Combined-Bengali" label="বাংলা" accesskey="B"
+                                  class="menuitem-iconic" tooltiptext="Get the Bengali meaning"
+                                  oncommand="Winfo_Search(event, 'bengali'); event.stopPropagation();" />
+                    </menupopup>
+		  </menu>
+                </menubar>
+                
+                
+                <toolbarbutton id="Winfo-Web-Button" tooltiptext="Get the information" accesskey="I"
+                               label="INFO" oncommand="Winfo_Search(event, 'hindi')" />
+            </toolbaritem>
+            <toolbarspring />
+
+        </toolbar>
+    </toolbox>
+</overlay>
+
